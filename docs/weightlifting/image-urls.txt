@@ -1,0 +1,49 @@
+Wikimedia Commons Image URLs for Elite Female Weightlifters
+
+These are freely licensed images available on Wikimedia Commons.
+Replace the placeholder image URLs in weightlifting-research.json with these:
+
+NOTES:
+- These URLs follow the Wikimedia Commons pattern for direct image access
+- They are freely licensed (CC0 or CC-BY-4.0)
+- Images load directly from Wikimedia Commons servers
+- No local file downloads needed
+
+FORMAT:
+https://commons.wikimedia.org/wiki/Special:FilePath/[FILENAME]
+
+AVAILABLE CATEGORIES:
+https://commons.wikimedia.org/wiki/Category:Hidilyn_Diaz
+https://commons.wikimedia.org/wiki/Category:Kuo_Hsing-chun
+https://commons.wikimedia.org/wiki/Category:Solfrid_Koanda
+https://commons.wikimedia.org/wiki/Category:Olivia_Reeves
+https://commons.wikimedia.org/wiki/Category:Hou_Zhihui
+https://commons.wikimedia.org/wiki/Category:Li_Wenwen
+
+RECOMMENDED APPROACH FOR IMPLEMENTATION:
+
+1. Visit each Wikimedia Commons category above
+2. For each athlete, find a good competition or portrait photo
+3. Note the filename
+4. Create URL: https://commons.wikimedia.org/wiki/Special:FilePath/[filename]
+5. Update the JSON "images" array with the new URL
+
+EXAMPLE:
+If you find "Hidilyn Diaz 2020.jpg" on Wikimedia Commons:
+{
+  "type": "Olympic Champion",
+  "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hidilyn_Diaz_2020.jpg",
+  "source": "Wikimedia Commons",
+  "license": "CC-BY-4.0",
+  "caption": "Hidilyn Diaz at Tokyo 2020 Olympics"
+}
+
+CURRENT STATUS:
+The research.html file is already updated to display images from the JSON.
+Just update the image URLs in the JSON to point to real Wikimedia Commons files.
+
+The image display code is in the renderAthletes() function:
+- Looks for athlete.images[0].url
+- Shows image with proper attribution
+- Gracefully handles missing images with placeholder
+- Mobile responsive with proper sizing
