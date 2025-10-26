@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Nutrition Plan - Weightlifting Journey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a5f5f;
+            --primary-light: #2a8f8f;
+            --accent: #d97e6b;
+            --accent-light: #e8a89a;
+            --bg-dark: #0f2f2f;
+            --bg-light: #f5f5f1;
+            --text-dark: #1a1a1a;
+            --text-light: #f5f5f1;
+            --border: #e0d9d0;
+            --success: #6b9b6b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--text-light);
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(26, 95, 95, 0.15);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.95;
+            margin-bottom: 1rem;
+        }
+
+        .goal-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        /* Section Headings */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+        }
+
+        /* Daily Meal Timeline */
+        .meal-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .meal-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .meal-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .meal-image {
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(135deg, var(--primary-light), var(--accent-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .meal-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .meal-image.placeholder {
+            font-size: 2.5rem;
+            opacity: 0.7;
+        }
+
+        .meal-info {
+            padding: 1.5rem;
+        }
+
+        .meal-time {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .meal-name {
+            font-size: 1.3rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .meal-stats {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .meal-stat {
+            flex: 1;
+            text-align: center;
+        }
+
+        .meal-stat-value {
+            font-size: 1.3rem;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .meal-stat-label {
+            font-size: 0.75rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 0.25rem;
+        }
+
+        /* Macro Tracker Dashboard */
+        .macro-dashboard {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .daily-target {
+            margin-bottom: 2rem;
+        }
+
+        .target-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .target-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .target-value {
+            font-size: 0.95rem;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            border-radius: 10px;
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+
+        .macro-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .macro-box {
+            background: linear-gradient(135deg, rgba(26, 95, 95, 0.1), rgba(217, 126, 107, 0.1));
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .macro-box.protein {
+            border-left-color: var(--primary);
+        }
+
+        .macro-box.carbs {
+            border-left-color: var(--accent);
+        }
+
+        .macro-box.fats {
+            border-left-color: var(--success);
+        }
+
+        .macro-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .macro-box.carbs .macro-value {
+            color: var(--accent);
+        }
+
+        .macro-box.fats .macro-value {
+            color: var(--success);
+        }
+
+        .macro-label {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Weekly Prep Calendar */
+        .prep-calendar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .prep-day {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--primary);
+        }
+
+        .prep-day.weekend {
+            border-left-color: var(--accent);
+            background: linear-gradient(135deg, rgba(217, 126, 107, 0.05), transparent);
+        }
+
+        .prep-day-name {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+        }
+
+        .prep-task {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+            border-left: 2px solid var(--border);
+        }
+
+        /* Nutrition Facts Cards */
+        .nutrition-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .nutrition-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nutrition-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .nutrition-fact {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+
+        .nutrition-fact:last-child {
+            border-bottom: none;
+        }
+
+        .nutrition-label {
+            color: #666;
+            font-weight: 500;
+        }
+
+        .nutrition-value {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Progress Tracker */
+        .progress-tracker {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .milestone-list {
+            list-style: none;
+        }
+
+        .milestone {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .milestone.completed {
+            border-left-color: var(--success);
+            background: rgba(107, 155, 107, 0.05);
+        }
+
+        .milestone-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .milestone.completed .milestone-icon {
+            background: var(--success);
+        }
+
+        .milestone-content {
+            flex: 1;
+        }
+
+        .milestone-target {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .milestone-date {
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 0.25rem;
+        }
+
+        /* Input Section */
+        .input-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-item label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .input-item input {
+            padding: 0.75rem;
+            border: 2px solid var(--border);
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-item input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 95, 95, 0.3);
+        }
+
+        .btn-secondary {
+            background: var(--accent);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .section h2 {
+                font-size: 1.4rem;
+            }
+
+            .meal-timeline {
+                grid-template-columns: 1fr;
+            }
+
+            .macro-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .input-group {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .meal-card, .section {
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        .meal-card:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .meal-card:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .meal-card:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>🏋️ Elite Nutrition Plan</h1>
+        <p>Your Path to 1.5× Bodyweight Snatch</p>
+        <span class="goal-badge">55 kg → 60 kg | Snatch Target: 90 kg</span>
+    </header>
+
+    <div class="container">
+        <!-- Daily Meal Timeline -->
+        <section class="section">
+            <h2>📅 Daily Meal Timeline</h2>
+            <div class="meal-timeline">
+                <!-- Breakfast -->
+                <div class="meal-card">
+                    <div class="meal-image placeholder">🥣</div>
+                    <div class="meal-info">
+                        <div class="meal-time">6:00 AM</div>
+                        <div class="meal-name">Breakfast</div>
+                        <p style="color: #666; font-size: 0.95rem;">Maize porridge + Amasi (Yoghurt) + 1 Egg</p>
+                        <div class="meal-stats">
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">350</div>
+                                <div class="meal-stat-label">kcal</div>
+                            </div>
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">15g</div>
+                                <div class="meal-stat-label">Protein</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snack 1 -->
+                <div class="meal-card">
+                    <div class="meal-image">
+                        <img src="tofu.jpg" alt="Tofu Snack">
+                    </div>
+                    <div class="meal-info">
+                        <div class="meal-time">10:00 AM</div>
+                        <div class="meal-name">Morning Snack</div>
+                        <p style="color: #666; font-size: 0.95rem;">Hard-boiled Eggs (2) + Seaweed</p>
+                        <div class="meal-stats">
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">180</div>
+                                <div class="meal-stat-label">kcal</div>
+                            </div>
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">16g</div>
+                                <div class="meal-stat-label">Protein</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lunch -->
+                <div class="meal-card">
+                    <div class="meal-image">
+                        <img src="rice beans.jpg" alt="Rice and Beans">
+                    </div>
+                    <div class="meal-info">
+                        <div class="meal-time">1:00 PM</div>
+                        <div class="meal-name">Lunch</div>
+                        <p style="color: #666; font-size: 0.95rem;">Rice + Beans + Imifino (Leafy Greens)</p>
+                        <div class="meal-stats">
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">500</div>
+                                <div class="meal-stat-label">kcal</div>
+                            </div>
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">18g</div>
+                                <div class="meal-stat-label">Protein</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snack 2 -->
+                <div class="meal-card">
+                    <div class="meal-image placeholder">🍲</div>
+                    <div class="meal-info">
+                        <div class="meal-time">3:00 PM</div>
+                        <div class="meal-name">Pre-Training Snack</div>
+                        <p style="color: #666; font-size: 0.95rem;">Tempeh stir-fry (100g) + Kimchi</p>
+                        <div class="meal-stats">
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">200</div>
+                                <div class="meal-stat-label">kcal</div>
+                            </div>
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">20g</div>
+                                <div class="meal-stat-label">Protein</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dinner -->
+                <div class="meal-card">
+                    <div class="meal-image">
+                        <img src="kimchi dinner.jpg" alt="Kimchi Dinner Bowl">
+                    </div>
+                    <div class="meal-info">
+                        <div class="meal-time">7:00 PM</div>
+                        <div class="meal-name">Dinner</div>
+                        <p style="color: #666; font-size: 0.95rem;">Tofu (150g) + Rice (0.5 cup) + Leafy Greens</p>
+                        <div class="meal-stats">
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">400</div>
+                                <div class="meal-stat-label">kcal</div>
+                            </div>
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">20g</div>
+                                <div class="meal-stat-label">Protein</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder for Additional Meal -->
+                <div class="meal-card">
+                    <div class="meal-image placeholder">➕</div>
+                    <div class="meal-info">
+                        <div class="meal-time">Additional Meal</div>
+                        <div class="meal-name">Your Custom Meal</div>
+                        <p style="color: #999; font-size: 0.95rem;">Add your own meal here</p>
+                        <div class="meal-stats">
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">?</div>
+                                <div class="meal-stat-label">kcal</div>
+                            </div>
+                            <div class="meal-stat">
+                                <div class="meal-stat-value">?g</div>
+                                <div class="meal-stat-label">Protein</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Macro Tracker Input -->
+        <section class="section">
+            <h2>📊 Daily Tracking</h2>
+            <div class="input-section">
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="daily-cal">Today's Calories</label>
+                        <input type="number" id="daily-cal" placeholder="e.g., 2130" value="0">
+                    </div>
+                    <div class="input-item">
+                        <label for="daily-protein">Protein (g)</label>
+                        <input type="number" id="daily-protein" placeholder="e.g., 95" value="0">
+                    </div>
+                    <div class="input-item">
+                        <label for="daily-carbs">Carbs (g)</label>
+                        <input type="number" id="daily-carbs" placeholder="e.g., 190" value="0">
+                    </div>
+                    <div class="input-item">
+                        <label for="daily-fats">Fats (g)</label>
+                        <input type="number" id="daily-fats" placeholder="e.g., 55" value="0">
+                    </div>
+                </div>
+                <button class="btn" onclick="updateMacros()">Update Macros</button>
+            </div>
+
+            <!-- Macro Dashboard -->
+            <div class="macro-dashboard">
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem;">Daily Targets vs Actual</h3>
+
+                <div class="daily-target">
+                    <div class="target-header">
+                        <span class="target-name">Calories</span>
+                        <span class="target-value"><span id="cal-actual">0</span> / 2130 kcal</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="cal-progress" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div class="daily-target">
+                    <div class="target-header">
+                        <span class="target-name">Protein</span>
+                        <span class="target-value"><span id="protein-actual">0</span> / 95 g</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="protein-progress" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div class="daily-target">
+                    <div class="target-header">
+                        <span class="target-name">Carbohydrates</span>
+                        <span class="target-value"><span id="carbs-actual">0</span> / 190 g</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="carbs-progress" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div class="daily-target">
+                    <div class="target-header">
+                        <span class="target-name">Fats</span>
+                        <span class="target-value"><span id="fats-actual">0</span> / 55 g</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="fats-progress" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div class="macro-grid">
+                    <div class="macro-box protein">
+                        <div class="macro-value" id="macro-protein">0g</div>
+                        <div class="macro-label">Protein</div>
+                    </div>
+                    <div class="macro-box carbs">
+                        <div class="macro-value" id="macro-carbs">0g</div>
+                        <div class="macro-label">Carbs</div>
+                    </div>
+                    <div class="macro-box fats">
+                        <div class="macro-value" id="macro-fats">0g</div>
+                        <div class="macro-label">Fats</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Prep Calendar -->
+        <section class="section">
+            <h2>📋 Weekly Meal Prep Schedule</h2>
+            <div class="prep-calendar">
+                <div class="prep-day weekend">
+                    <div class="prep-day-name">Saturday (Prep Day)</div>
+                    <div class="prep-task">✓ Batch cook rice (3 cups)</div>
+                    <div class="prep-task">✓ Cook beans (2 cups)</div>
+                    <div class="prep-task">✓ Sauté imifino (greens)</div>
+                    <div class="prep-task">✓ Marinate tempeh</div>
+                    <div class="prep-task">✓ Boil eggs (1 dozen)</div>
+                </div>
+
+                <div class="prep-day">
+                    <div class="prep-day-name">Sunday (Prep Day)</div>
+                    <div class="prep-task">✓ Prep tofu portions</div>
+                    <div class="prep-task">✓ Chop vegetables</div>
+                    <div class="prep-task">✓ Portion seaweed snacks</div>
+                    <div class="prep-task">✓ Portion kimchi</div>
+                    <div class="prep-task">✓ Make maize porridge</div>
+                </div>
+
+                <div class="prep-day">
+                    <div class="prep-day-name">Mon-Fri (Training Days)</div>
+                    <div class="prep-task">✓ Assemble meals from prep</div>
+                    <div class="prep-task">✓ Log calories/macros</div>
+                    <div class="prep-task">✓ 3 gym sessions</div>
+                    <div class="prep-task">✓ Track sleep (7-9 hrs)</div>
+                    <div class="prep-task">✓ Breathing practice (2×)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nutrition Facts -->
+        <section class="section">
+            <h2>🥗 Nutrition Reference Guide</h2>
+            <div class="nutrition-facts">
+                <div class="nutrition-card">
+                    <h3>🌾 Maize Porridge (1 cup cooked)</h3>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Calories</span>
+                        <span class="nutrition-value">200 kcal</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Protein</span>
+                        <span class="nutrition-value">4g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Carbs</span>
+                        <span class="nutrition-value">42g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Fats</span>
+                        <span class="nutrition-value">1g</span>
+                    </div>
+                </div>
+
+                <div class="nutrition-card">
+                    <h3>🥛 Amasi/Yoghurt (200 mL)</h3>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Calories</span>
+                        <span class="nutrition-value">150 kcal</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Protein</span>
+                        <span class="nutrition-value">11g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Carbs</span>
+                        <span class="nutrition-value">12g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Fats</span>
+                        <span class="nutrition-value">5g</span>
+                    </div>
+                </div>
+
+                <div class="nutrition-card">
+                    <h3>🍚 Rice (1 cup cooked)</h3>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Calories</span>
+                        <span class="nutrition-value">206 kcal</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Protein</span>
+                        <span class="nutrition-value">4g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Carbs</span>
+                        <span class="nutrition-value">45g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Fats</span>
+                        <span class="nutrition-value">0.2g</span>
+                    </div>
+                </div>
+
+                <div class="nutrition-card">
+                    <h3>🫘 Beans (1 cup cooked)</h3>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Calories</span>
+                        <span class="nutrition-value">294 kcal</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Protein</span>
+                        <span class="nutrition-value">14g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Carbs</span>
+                        <span class="nutrition-value">53g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Fats</span>
+                        <span class="nutrition-value">1g</span>
+                    </div>
+                </div>
+
+                <div class="nutrition-card">
+                    <h3>🟫 Tofu (150g)</h3>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Calories</span>
+                        <span class="nutrition-value">176 kcal</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Protein</span>
+                        <span class="nutrition-value">20g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Carbs</span>
+                        <span class="nutrition-value">2g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Fats</span>
+                        <span class="nutrition-value">11g</span>
+                    </div>
+                </div>
+
+                <div class="nutrition-card">
+                    <h3>🌊 Seaweed (1 handful, ~5g)</h3>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Calories</span>
+                        <span class="nutrition-value">17 kcal</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Protein</span>
+                        <span class="nutrition-value">1.5g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Carbs</span>
+                        <span class="nutrition-value">3g</span>
+                    </div>
+                    <div class="nutrition-fact">
+                        <span class="nutrition-label">Fats</span>
+                        <span class="nutrition-value">0.2g</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Tracker -->
+        <section class="section">
+            <h2>🎯 12-Week Progress Milestones</h2>
+            <div class="progress-tracker">
+                <ul class="milestone-list">
+                    <li class="milestone completed">
+                        <div class="milestone-icon">✓</div>
+                        <div class="milestone-content">
+                            <div class="milestone-target">Establish nutrition tracking habit (Week 1-2)</div>
+                            <div class="milestone-date">Completed: Today</div>
+                        </div>
+                    </li>
+                    <li class="milestone">
+                        <div class="milestone-icon">2</div>
+                        <div class="milestone-content">
+                            <div class="milestone-target">Bodyweight: 56 kg (Week 4)</div>
+                            <div class="milestone-date">Target: 1 January 2026</div>
+                        </div>
+                    </li>
+                    <li class="milestone">
+                        <div class="milestone-icon">3</div>
+                        <div class="milestone-content">
+                            <div class="milestone-target">Bodyweight: 57 kg (Week 8)</div>
+                            <div class="milestone-date">Target: 1 February 2026</div>
+                        </div>
+                    </li>
+                    <li class="milestone">
+                        <div class="milestone-icon">4</div>
+                        <div class="milestone-content">
+                            <div class="milestone-target">Bodyweight: 58 kg (Week 12)</div>
+                            <div class="milestone-date">Target: 1 March 2026</div>
+                        </div>
+                    </li>
+                    <li class="milestone">
+                        <div class="milestone-icon">5</div>
+                        <div class="milestone-content">
+                            <div class="milestone-target">Bodyweight: 59 kg (Month 4)</div>
+                            <div class="milestone-date">Target: 1 April 2026</div>
+                        </div>
+                    </li>
+                    <li class="milestone">
+                        <div class="milestone-icon">🏆</div>
+                        <div class="milestone-content">
+                            <div class="milestone-target">Bodyweight: 60 kg | Snatch: 90 kg (1.5×)</div>
+                            <div class="milestone-date">Target: May 2026</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Elite Nutrition Plan for Olympic Weightlifting</strong></p>
+        <p>Evidence-based nutrition strategy for your 55kg → 60kg → 90kg snatch journey</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">Last updated: October 26, 2025 | Review and adjust based on your progress</p>
+    </footer>
+
+    <script>
+        // Update macros function
+        function updateMacros() {
+            const calories = parseFloat(document.getElementById('daily-cal').value) || 0;
+            const protein = parseFloat(document.getElementById('daily-protein').value) || 0;
+            const carbs = parseFloat(document.getElementById('daily-carbs').value) || 0;
+            const fats = parseFloat(document.getElementById('daily-fats').value) || 0;
+
+            // Target values
+            const targetCal = 2130;
+            const targetProtein = 95;
+            const targetCarbs = 190;
+            const targetFats = 55;
+
+            // Update actual values
+            document.getElementById('cal-actual').textContent = calories;
+            document.getElementById('protein-actual').textContent = protein;
+            document.getElementById('carbs-actual').textContent = carbs;
+            document.getElementById('fats-actual').textContent = fats;
+
+            // Update macro display
+            document.getElementById('macro-protein').textContent = protein + 'g';
+            document.getElementById('macro-carbs').textContent = carbs + 'g';
+            document.getElementById('macro-fats').textContent = fats + 'g';
+
+            // Calculate and update progress bars
+            const calProgress = (calories / targetCal) * 100;
+            const proteinProgress = (protein / targetProtein) * 100;
+            const carbsProgress = (carbs / targetCarbs) * 100;
+            const fatsProgress = (fats / targetFats) * 100;
+
+            // Cap at 100% for visual purposes
+            document.getElementById('cal-progress').style.width = Math.min(calProgress, 100) + '%';
+            document.getElementById('protein-progress').style.width = Math.min(proteinProgress, 100) + '%';
+            document.getElementById('carbs-progress').style.width = Math.min(carbsProgress, 100) + '%';
+            document.getElementById('fats-progress').style.width = Math.min(fatsProgress, 100) + '%';
+
+            // Save to local storage
+            const today = new Date().toISOString().split('T')[0];
+            const data = { calories, protein, carbs, fats, date: today };
+            localStorage.setItem('nutrition_' + today, JSON.stringify(data));
+
+            // Show feedback
+            alert(`Macros updated! Progress saved for ${today}`);
+        }
+
+        // Load data from local storage on page load
+        window.addEventListener('load', function() {
+            const today = new Date().toISOString().split('T')[0];
+            const savedData = localStorage.getItem('nutrition_' + today);
+
+            if (savedData) {
+                const data = JSON.parse(savedData);
+                document.getElementById('daily-cal').value = data.calories;
+                document.getElementById('daily-protein').value = data.protein;
+                document.getElementById('daily-carbs').value = data.carbs;
+                document.getElementById('daily-fats').value = data.fats;
+                updateMacros();
+            }
+        });
+
+        // Allow Enter key to submit
+        document.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && (
+                e.target.id === 'daily-cal' ||
+                e.target.id === 'daily-protein' ||
+                e.target.id === 'daily-carbs' ||
+                e.target.id === 'daily-fats'
+            )) {
+                updateMacros();
+            }
+        });
+    </script>
+</body>
+</html>
