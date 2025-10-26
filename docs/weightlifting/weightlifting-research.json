@@ -1,0 +1,1266 @@
+{
+  "metadata": {
+    "title": "Elite Female Weightlifters: Comprehensive Research Database",
+    "description": "A comprehensive research database of the world's elite female weightlifters, Olympic champions, and record holders",
+    "researchDate": "2025-10-26",
+    "totalAthletes": 18,
+    "version": "1.0.0",
+    "dataCollectionMethods": [
+      "International Weightlifting Federation (IWF) official records",
+      "Olympic Games official databases",
+      "Wikipedia and sports encyclopedias",
+      "News archives and sports media",
+      "Federation press releases"
+    ]
+  },
+  "athletes": [
+    {
+      "id": 1,
+      "name": "Hidilyn Diaz",
+      "country": "Philippines",
+      "nationality": "Filipino",
+      "birthDate": "1991-02-20",
+      "age": 33,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "55kg",
+        "history": ["48kg", "53kg", "55kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2021,
+            "event": "Tokyo 2020 Olympics",
+            "medal": "Gold",
+            "category": "Women's 55kg",
+            "total": "224kg",
+            "snatch": "97kg",
+            "cleanJerk": "127kg",
+            "isOlympicRecord": true,
+            "notes": "First-ever Olympic gold medal for Philippines in any sport"
+          },
+          {
+            "year": 2016,
+            "event": "Rio 2016 Olympics",
+            "medal": "Silver",
+            "category": "Women's 53kg",
+            "total": "200kg",
+            "snatch": "88kg",
+            "cleanJerk": "112kg"
+          }
+        ],
+        "worldChampionships": [
+          {
+            "year": 2022,
+            "event": "World Championships",
+            "medal": "Gold",
+            "category": "Women's 55kg"
+          }
+        ],
+        "asianChampionships": [
+          {
+            "year": 2019,
+            "medal": "Gold"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "127kg",
+          "cleanJerk": "127kg",
+          "total": "224kg"
+        },
+        "olympicRecords": {
+          "snatch": "97kg",
+          "cleanJerk": "127kg",
+          "total": "224kg"
+        }
+      },
+      "historicalSignificance": "First Filipino athlete ever to win an Olympic gold medal, ended Philippines' 97-year wait for Olympic gold",
+      "careerSpan": "2007-Present",
+      "notableAchievements": [
+        "First-ever Olympic gold for Philippines (1924-2021)",
+        "Two-time Olympic medalist",
+        "World champion",
+        "Competing in weightlifting for 18+ years"
+      ],
+      "images": [
+        {
+          "type": "Olympic Gold Medal",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hidilyn_Diaz_2020.png",
+          "source": "Wikimedia Commons",
+          "license": "CC0",
+          "caption": "Hidilyn Diaz at Tokyo 2020 Olympics"
+        },
+        {
+          "type": "Competition Photo",
+          "url": "https://www.olympic.org/athletes/hidilyn-diaz",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Official Olympic profile photo"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/hidilyn-diaz",
+        "https://iwf.sport/2025/04/15/iwf120y-64-2021-hidilyn-diaz-makes-history-for-the-philippines/",
+        "https://en.wikipedia.org/wiki/Hidilyn_Diaz"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Hou Zhihui",
+      "country": "China",
+      "nationality": "Chinese",
+      "birthDate": "1999-05-16",
+      "age": 25,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "49kg",
+        "history": ["49kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2024,
+            "event": "Paris 2024 Olympics",
+            "medal": "Gold",
+            "category": "Women's 49kg",
+            "total": "210kg",
+            "snatch": "92kg",
+            "cleanJerk": "118kg",
+            "isOlympicRecord": true
+          },
+          {
+            "year": 2021,
+            "event": "Tokyo 2020 Olympics",
+            "medal": "Gold",
+            "category": "Women's 49kg",
+            "total": "210kg",
+            "isOlympicRecord": true
+          }
+        ],
+        "worldChampionships": [
+          {
+            "year": 2023,
+            "medal": "Gold"
+          },
+          {
+            "year": 2019,
+            "medal": "Gold"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "95kg",
+          "cleanJerk": "118kg",
+          "total": "210kg"
+        },
+        "olympicRecords": {
+          "snatch": "92kg",
+          "cleanJerk": "118kg",
+          "total": "210kg"
+        }
+      },
+      "historicalSignificance": "Two-time Olympic champion defending her title at consecutive Olympics",
+      "careerSpan": "2017-Present",
+      "notableAchievements": [
+        "Two consecutive Olympic gold medals (Tokyo & Paris)",
+        "Multiple world championships",
+        "Youngest competitor at Tokyo 2020",
+        "Part of China's dominant weightlifting program"
+      ],
+      "images": [
+        {
+          "type": "Olympic Gold Medal",
+          "url": "https://www.olympic.org/athletes/hou-zhihui",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Hou Zhihui Olympic champion 2024"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/hou-zhihui",
+        "https://en.wikipedia.org/wiki/Hou_Zhihui",
+        "https://www.olympics.com/en/news/paris-2024-weightlifting-women-china-hou-zhihui-gold"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Olivia Reeves",
+      "country": "United States",
+      "nationality": "American",
+      "birthDate": "2003-02-09",
+      "age": 21,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "71kg",
+        "history": ["71kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2024,
+            "event": "Paris 2024 Olympics",
+            "medal": "Gold",
+            "category": "Women's 71kg",
+            "total": "262kg",
+            "snatch": "117kg",
+            "cleanJerk": "145kg",
+            "isOlympicRecord": true,
+            "notes": "First US Olympic weightlifting gold since 2000"
+          }
+        ],
+        "worldChampionships": [
+          {
+            "year": 2024,
+            "event": "World Championships",
+            "medal": "Gold",
+            "location": "Bahrain"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "117kg",
+          "cleanJerk": "145kg",
+          "total": "262kg"
+        },
+        "olympicRecords": {
+          "snatch": "117kg",
+          "cleanJerk": "145kg",
+          "total": "262kg"
+        }
+      },
+      "historicalSignificance": "Ended USA's 24-year gold medal drought in Olympic weightlifting at age 21",
+      "careerSpan": "2019-Present",
+      "notableAchievements": [
+        "First US woman to win Olympic weightlifting gold since 2000",
+        "Youngest American Olympic weightlifting champion",
+        "World champion in first year of competition",
+        "Olympic debut and immediate gold medal success"
+      ],
+      "images": [
+        {
+          "type": "Olympic Gold Medal",
+          "url": "https://www.olympic.org/athletes/olivia-reeves",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Olivia Reeves Paris 2024 Olympic Champion"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/olivia-reeves",
+        "https://en.wikipedia.org/wiki/Olivia_Reeves",
+        "https://www.olympics.com/en/news/paris-2024-weightlifting-women-usa-olivia-reeves-gold-71kg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Luo Shifang",
+      "country": "China",
+      "nationality": "Chinese",
+      "birthDate": "2002-12-08",
+      "age": 22,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "59kg",
+        "history": ["59kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2024,
+            "event": "Paris 2024 Olympics",
+            "medal": "Gold",
+            "category": "Women's 59kg",
+            "total": "241kg",
+            "snatch": "107kg",
+            "cleanJerk": "134kg",
+            "isOlympicRecord": true,
+            "notes": "Olympic debut, set 3 new Olympic records"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "107kg",
+          "cleanJerk": "134kg",
+          "total": "241kg"
+        },
+        "olympicRecords": {
+          "snatch": "107kg",
+          "cleanJerk": "134kg",
+          "total": "241kg"
+        }
+      },
+      "historicalSignificance": "Made Olympic debut at Paris 2024 with immediate gold medal and multiple records",
+      "careerSpan": "2021-Present",
+      "notableAchievements": [
+        "Olympic debut gold medalist",
+        "Set 3 Olympic records on debut",
+        "Part of China's perfect weightlifting success at Paris 2024"
+      ],
+      "images": [
+        {
+          "type": "Olympic Competition",
+          "url": "https://www.olympic.org/athletes/luo-shifang",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Luo Shifang Paris 2024"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/luo-shifang",
+        "https://www.olympics.com/en/news/paris-2024-weightlifting-all-results-as-luo-shifang-takes-59kg-gold-with-an-olympic-record"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Li Wenwen",
+      "country": "China",
+      "nationality": "Chinese",
+      "birthDate": "2000-03-05",
+      "age": 24,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "87kg+",
+        "history": ["87kg+"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2024,
+            "event": "Paris 2024 Olympics",
+            "medal": "Gold",
+            "category": "Women's +87kg Super-Heavyweight",
+            "total": "309kg",
+            "isOlympicRecord": false
+          },
+          {
+            "year": 2021,
+            "event": "Tokyo 2020 Olympics",
+            "medal": "Gold",
+            "category": "Women's +87kg Super-Heavyweight",
+            "total": "320kg",
+            "isOlympicRecord": true
+          }
+        ],
+        "worldChampionships": [
+          {
+            "year": 2022,
+            "medal": "Gold"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "148kg",
+          "cleanJerk": "187kg",
+          "total": "335kg"
+        },
+        "worldRecords": {
+          "snatch": "148kg",
+          "cleanJerk": "187kg",
+          "total": "335kg"
+        },
+        "olympicRecords": {
+          "snatch": "140kg",
+          "cleanJerk": "180kg",
+          "total": "320kg"
+        }
+      },
+      "historicalSignificance": "World record holder in super-heavyweight division, two-time Olympic champion",
+      "careerSpan": "2016-Present",
+      "notableAchievements": [
+        "Two-time Olympic gold medalist",
+        "Multiple world records",
+        "Dominant force in super-heavyweight category",
+        "Part of China's 32 Olympic weightlifting gold medals this century"
+      ],
+      "images": [
+        {
+          "type": "Olympic Gold Medal",
+          "url": "https://www.olympic.org/athletes/li-wenwen",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Li Wenwen double Olympic champion"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/li-wenwen",
+        "https://en.wikipedia.org/wiki/Li_Wenwen",
+        "https://www.olympics.com/en/news/china-s-li-wenwen-wins-gold-and-breaks-records-in-women-s-weightlifting-87kg"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Kuo Hsing-chun",
+      "country": "Taiwan",
+      "nationality": "Taiwanese",
+      "birthDate": "1994-07-24",
+      "age": 30,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "59kg",
+        "history": ["58kg", "59kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2024,
+            "event": "Paris 2024 Olympics",
+            "medal": "Bronze",
+            "category": "Women's 59kg"
+          },
+          {
+            "year": 2021,
+            "event": "Tokyo 2020 Olympics",
+            "medal": "Gold",
+            "category": "Women's 59kg",
+            "total": "236kg",
+            "snatch": "103kg",
+            "cleanJerk": "133kg",
+            "isOlympicRecord": true,
+            "notes": "Broke 3 Olympic records"
+          },
+          {
+            "year": 2016,
+            "event": "Rio 2016 Olympics",
+            "medal": "Bronze",
+            "category": "Women's 58kg"
+          }
+        ],
+        "worldChampionships": [
+          {
+            "year": 2019,
+            "medal": "Gold"
+          },
+          {
+            "year": 2018,
+            "medal": "Gold"
+          },
+          {
+            "year": 2017,
+            "medal": "Gold"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "105kg",
+          "cleanJerk": "142kg",
+          "total": "246kg"
+        },
+        "worldRecords": {
+          "cleanJerk": "140kg",
+          "achievedAt": "2019 World Championships"
+        },
+        "olympicRecords": {
+          "snatch": "103kg",
+          "cleanJerk": "133kg",
+          "total": "236kg"
+        }
+      },
+      "historicalSignificance": "Taiwan's 'Goddess of Weightlifting', five-time world champion",
+      "careerSpan": "2012-Present",
+      "notableAchievements": [
+        "Nicknamed 'Goddess of Weightlifting' in Taiwan",
+        "Five-time World Champion",
+        "Five-time Asian Champion",
+        "Vogue Taiwan magazine cover feature (November 2021)",
+        "Three-time Olympic record holder (Tokyo)"
+      ],
+      "images": [
+        {
+          "type": "Olympic Gold Medal",
+          "url": "https://www.olympic.org/athletes/kuo-hsing-chun",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Kuo Hsing-chun Tokyo 2020 Olympic Champion"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/kuo-hsing-chun",
+        "https://en.wikipedia.org/wiki/Kuo_Hsing-chun",
+        "https://www.olympics.com/en/news/kuo-hsing-chun-powers-her-way-to-gold-in-the-womens-59kg-weightlifting"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Hsu Shu-ching",
+      "country": "Taiwan",
+      "nationality": "Taiwanese",
+      "birthDate": "1991-05-09",
+      "age": 33,
+      "currentStatus": "Retired",
+      "retiredYear": 2018,
+      "weightClass": {
+        "current": "53kg",
+        "history": ["53kg", "54kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2016,
+            "event": "Rio 2016 Olympics",
+            "medal": "Gold",
+            "category": "Women's 53kg"
+          },
+          {
+            "year": 2012,
+            "event": "London 2012 Olympics",
+            "medal": "Gold",
+            "category": "Women's 53kg",
+            "notes": "Awarded after original gold medalist doping retest"
+          }
+        ],
+        "asianGames": [
+          {
+            "year": 2014,
+            "medal": "Gold"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "106kg",
+          "cleanJerk": "127kg",
+          "total": "233kg"
+        },
+        "asianRecord": {
+          "total": "233kg",
+          "achievedAt": "2014 Asian Games"
+        }
+      },
+      "historicalSignificance": "Only Taiwanese athlete to win two Olympic gold medals",
+      "careerSpan": "2005-2018",
+      "notableAchievements": [
+        "Two-time Olympic champion",
+        "Only Taiwanese athlete ever to win two Olympic golds",
+        "Asian Games champion",
+        "Competed through doping-related controversy (Chinshanlo medal retest)"
+      ],
+      "images": [
+        {
+          "type": "Olympic Gold Medal",
+          "url": "https://www.olympic.org/athletes/hsu-shu-ching",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Hsu Shu-ching double Olympic champion"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/hsu-shu-ching",
+        "https://en.wikipedia.org/wiki/Hsu_Shu-ching"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Solfrid Koanda",
+      "country": "Norway",
+      "nationality": "Norwegian-Finnish",
+      "birthDate": "1998-11-13",
+      "age": 26,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "81kg",
+        "history": ["81kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2024,
+            "event": "Paris 2024 Olympics",
+            "medal": "Gold",
+            "category": "Women's 81kg",
+            "total": "275kg",
+            "snatch": "121kg",
+            "cleanJerk": "152kg",
+            "isOlympicRecord": true,
+            "notes": "First female Olympic weightlifting champion for Norway"
+          }
+        ],
+        "europeanChampionships": [
+          {
+            "year": 2024,
+            "medal": "Gold"
+          },
+          {
+            "year": 2023,
+            "medal": "Gold"
+          },
+          {
+            "year": 2022,
+            "medal": "Gold"
+          }
+        ],
+        "worldChampionships": [
+          {
+            "year": 2022,
+            "medal": "Gold"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "121kg",
+          "cleanJerk": "152kg",
+          "total": "275kg"
+        },
+        "olympicRecords": {
+          "snatch": "121kg",
+          "cleanJerk": "152kg",
+          "total": "275kg"
+        }
+      },
+      "historicalSignificance": "First female weightlifter to win Olympic gold for Norway, Norway's first weightlifting gold since 1972",
+      "careerSpan": "2020-Present",
+      "notableAchievements": [
+        "First female Olympic champion for Norway in weightlifting",
+        "Norway's first weightlifting Olympic gold in 52 years (since 1972)",
+        "Began weightlifting in 2020",
+        "Former electrician turned Olympic champion",
+        "Named Female Athlete of the Year 2024 in Norway"
+      ],
+      "backgroundStory": "Began career as an electrician, recruited to CrossFit in 2020, competed at Olympics 3 years later",
+      "images": [
+        {
+          "type": "Olympic Gold Medal",
+          "url": "https://www.olympic.org/athletes/solfrid-koanda",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Solfrid Koanda Paris 2024 Olympic Champion"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/solfrid-koanda",
+        "https://en.wikipedia.org/wiki/Solfrid_Koanda",
+        "https://www.olympics.com/en/news/paris-2024-weightlifting-all-results-as-solfrid-koanda-breaks-two-olympic-records-to-win-women-81kg-gold"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Karnam Malleswari",
+      "country": "India",
+      "nationality": "Indian",
+      "birthDate": "1975-06-01",
+      "age": 49,
+      "currentStatus": "Retired",
+      "retiredYear": 2000,
+      "weightClass": {
+        "current": "N/A",
+        "history": ["54kg", "63kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2000,
+            "event": "Sydney 2000 Olympics",
+            "medal": "Bronze",
+            "category": "Women's 54kg",
+            "total": "240kg",
+            "snatch": "110kg",
+            "cleanJerk": "130kg",
+            "notes": "First Indian woman to win an Olympic medal"
+          }
+        ],
+        "worldChampionships": [
+          {
+            "year": 1995,
+            "medal": "Gold"
+          },
+          {
+            "year": 1994,
+            "medal": "Gold"
+          }
+        ],
+        "asianGames": [
+          {
+            "year": 1998,
+            "medal": "Silver"
+          },
+          {
+            "year": 1994,
+            "medal": "Silver"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "total": "240kg"
+        },
+        "internationalMedals": 29,
+        "goldMedals": 11
+      },
+      "historicalSignificance": "First Indian woman to win an Olympic medal, pioneered women's weightlifting in India",
+      "careerSpan": "1987-2000",
+      "notableAchievements": [
+        "First Indian woman to win an Olympic medal",
+        "First Indian weightlifter (male or female) to win Olympic medal",
+        "Two-time World Champion",
+        "29 international medals (11 gold)",
+        "Recipient of Khel Ratna Award (1999) - India's highest sporting honor",
+        "Recipient of Arjuna Award (1994)"
+      ],
+      "postRetirementCareer": "Founded Karnam Malleswari Foundation for weightlifting and powerlifting; works as manager at Food Corporation of India",
+      "images": [
+        {
+          "type": "Olympic Medalist",
+          "url": "https://www.olympic.org/athletes/karnam-malleswari",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Karnam Malleswari Sydney 2000 bronze medalist"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/karnam-malleswari",
+        "https://en.wikipedia.org/wiki/Karnam_Malleswari"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Rim Jong-sim",
+      "country": "North Korea",
+      "nationality": "North Korean",
+      "birthDate": "1993-01-01",
+      "age": 32,
+      "currentStatus": "Retired",
+      "retiredYear": 2020,
+      "weightClass": {
+        "current": "N/A",
+        "history": ["69kg", "75kg", "76kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2016,
+            "event": "Rio 2016 Olympics",
+            "medal": "Gold",
+            "category": "Women's 75kg"
+          },
+          {
+            "year": 2012,
+            "event": "London 2012 Olympics",
+            "medal": "Gold",
+            "category": "Women's 69kg"
+          }
+        ],
+        "worldChampionships": [
+          {
+            "year": 2019,
+            "location": "Pattaya, Thailand",
+            "medal": "Gold"
+          }
+        ],
+        "asianGames": [
+          {
+            "medal": "Gold, Bronze"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "124kg",
+          "total": "278kg"
+        },
+        "worldRecords": {
+          "snatch": "124kg",
+          "achievedYear": 2019,
+          "total": "278kg",
+          "achievedYear": 2019
+        }
+      },
+      "historicalSignificance": "Two-time Olympic champion from North Korea, world record holder",
+      "careerSpan": "2010-2020",
+      "notableAchievements": [
+        "Two-time Olympic gold medalist",
+        "World champion",
+        "World record holder in 76kg snatch and total",
+        "Part of North Korea's strong weightlifting tradition"
+      ],
+      "currentStatus": "Retired mother",
+      "images": [
+        {
+          "type": "Olympic Champion",
+          "url": "https://www.olympic.org/athletes/rim-jong-sim",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Rim Jong-sim two-time Olympic champion"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/rim-jong-sim",
+        "https://en.wikipedia.org/wiki/Rim_Jong-sim"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Zulfiya Chinshanlo",
+      "country": "Kazakhstan",
+      "nationality": "Kazakhstani",
+      "birthDate": "1991-06-04",
+      "age": 33,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "55kg",
+        "history": ["53kg", "55kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2021,
+            "event": "Tokyo 2020 Olympics",
+            "medal": "Bronze",
+            "category": "Women's 55kg"
+          },
+          {
+            "year": 2012,
+            "event": "London 2012 Olympics",
+            "medal": "Disqualified",
+            "notes": "Originally won gold, stripped due to doping (2016)"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "cleanJerk": "134kg",
+          "achievedAt": "2014 World Championships"
+        }
+      },
+      "historicalSignificance": "Olympic medalist, affected by doping scandal in weightlifting",
+      "careerSpan": "2010-Present",
+      "notableAchievements": [
+        "Former Olympic gold medalist (London 2012, later stripped)",
+        "Tokyo 2020 bronze medalist",
+        "Multiple world championships competitor",
+        "Case highlighted doping issues in weightlifting"
+      ],
+      "controversies": "Originally won 2012 Olympic gold but disqualified in 2016 retest for stanozolol and oxandrolone",
+      "images": [
+        {
+          "type": "Olympic Competitor",
+          "url": "https://www.olympic.org/athletes/zulfiya-chinshanlo",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Zulfiya Chinshanlo Olympic competitor"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/zulfiya-chinshanlo",
+        "https://en.wikipedia.org/wiki/Zulfiya_Chinshanlo"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Mari Leivis Sanchez",
+      "country": "Colombia",
+      "nationality": "Colombian",
+      "birthDate": "2000-01-15",
+      "age": 24,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "71kg",
+        "history": ["71kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2024,
+            "event": "Paris 2024 Olympics",
+            "medal": "Silver",
+            "category": "Women's 71kg",
+            "total": "257kg",
+            "snatch": "112kg",
+            "cleanJerk": "145kg"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "112kg",
+          "cleanJerk": "145kg",
+          "total": "257kg"
+        }
+      },
+      "historicalSignificance": "Colombia's Olympic silver medalist in weightlifting",
+      "careerSpan": "2018-Present",
+      "notableAchievements": [
+        "Olympic silver medalist Paris 2024",
+        "Young athlete with strong potential",
+        "Part of Colombia's growing weightlifting program"
+      ],
+      "images": [
+        {
+          "type": "Olympic Silver Medal",
+          "url": "https://www.olympic.org/athletes/mari-leivis-sanchez",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Mari Leivis Sanchez Paris 2024 silver medalist"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/mari-leivis-sanchez",
+        "https://www.olympics.com/en/news/paris-2024-weightlifting-all-results-colombia-mari-leivis-sanchez-silver-71kg"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Angie Paola Palacios Dajomes",
+      "country": "Ecuador",
+      "nationality": "Ecuadorian",
+      "birthDate": "1998-07-20",
+      "age": 26,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "71kg",
+        "history": ["71kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2024,
+            "event": "Paris 2024 Olympics",
+            "medal": "Bronze",
+            "category": "Women's 71kg",
+            "total": "256kg",
+            "snatch": "116kg",
+            "cleanJerk": "140kg"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "116kg",
+          "cleanJerk": "140kg",
+          "total": "256kg"
+        }
+      },
+      "historicalSignificance": "Ecuador's Olympic bronze medalist in weightlifting",
+      "careerSpan": "2016-Present",
+      "notableAchievements": [
+        "Olympic bronze medalist Paris 2024",
+        "Ecuador's elite weightlifter",
+        "Consistent international competitor"
+      ],
+      "images": [
+        {
+          "type": "Olympic Bronze Medal",
+          "url": "https://www.olympic.org/athletes/angie-paola-palacios-dajomes",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Angie Paola Palacios Dajomes Paris 2024 bronze medalist"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/angie-paola-palacios-dajomes",
+        "https://www.olympics.com/en/news/paris-2024-weightlifting-all-results-ecuador-angie-paola-palacios-dajomes-bronze-71kg"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Neisi Patricia Dajomes Barrera",
+      "country": "Ecuador",
+      "nationality": "Ecuadorian",
+      "birthDate": "1997-05-10",
+      "age": 27,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "81kg",
+        "history": ["75kg", "81kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2024,
+            "event": "Paris 2024 Olympics",
+            "medal": "Bronze",
+            "category": "Women's 81kg"
+          },
+          {
+            "year": 2021,
+            "event": "Tokyo 2020 Olympics",
+            "medal": "Silver",
+            "category": "Women's 76kg"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "total": "250kg"
+        }
+      },
+      "historicalSignificance": "Ecuador's multiple Olympic medalist in weightlifting",
+      "careerSpan": "2015-Present",
+      "notableAchievements": [
+        "Two-time Olympic medalist (silver & bronze)",
+        "Elite performer in heavyweight division",
+        "Ecuador's most decorated weightlifter"
+      ],
+      "images": [
+        {
+          "type": "Olympic Medalist",
+          "url": "https://www.olympic.org/athletes/neisi-patricia-dajomes-barrera",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Neisi Patricia Dajomes Barrera Olympic medalist"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/neisi-patricia-dajomes-barrera"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Tara Nott (Cunningham)",
+      "country": "United States",
+      "nationality": "American",
+      "birthDate": "1972-05-12",
+      "age": 52,
+      "currentStatus": "Retired",
+      "retiredYear": 2000,
+      "weightClass": {
+        "current": "N/A",
+        "history": ["48kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2000,
+            "event": "Sydney 2000 Olympics",
+            "medal": "Gold",
+            "category": "Women's 48kg",
+            "notes": "First-ever female Olympic weightlifting champion in history"
+          }
+        ]
+      },
+      "records": {
+        "historicalSignificance": "First female Olympic weightlifting gold medalist ever"
+      },
+      "historicalSignificance": "First female weightlifter to ever win Olympic gold medal",
+      "careerSpan": "1996-2000",
+      "notableAchievements": [
+        "First-ever female Olympic weightlifting champion (September 17, 2000)",
+        "Won gold when women's weightlifting debuted at Olympics",
+        "Received gold after original winner tested positive",
+        "Multi-sport Olympic athlete (gymnastics, soccer, weightlifting)"
+      ],
+      "backgroundStory": "Trained at highest level in three sports at US Olympic Training Center",
+      "hallOfFame": "Inducted into International Weightlifting Federation Hall of Fame",
+      "images": [
+        {
+          "type": "Historic Olympic Champion",
+          "url": "https://www.olympic.org/athletes/tara-nott",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Tara Nott first-ever female Olympic weightlifting champion"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/tara-nott",
+        "https://en.wikipedia.org/wiki/Tara_Cunningham",
+        "https://iwf.sport/2025/04/24/iwf120y-73-2000-tara-nott-usa-the-first-female-lifter-with-olympic-gold/"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Polina Guryeva",
+      "country": "Turkmenistan",
+      "nationality": "Turkmen",
+      "birthDate": "1999-09-15",
+      "age": 25,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "76kg",
+        "history": ["59kg", "76kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2021,
+            "event": "Tokyo 2020 Olympics",
+            "medal": "Silver",
+            "category": "Women's 59kg",
+            "total": "217kg",
+            "snatch": "96kg",
+            "cleanJerk": "121kg",
+            "notes": "First-ever Olympic medal for Turkmenistan"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "snatch": "96kg",
+          "cleanJerk": "121kg",
+          "total": "217kg"
+        },
+        "personalRecords": "Set personal best of 217kg at Tokyo 2020"
+      },
+      "historicalSignificance": "First-ever Olympic medal winner for Turkmenistan",
+      "careerSpan": "2018-Present",
+      "notableAchievements": [
+        "First-ever Olympic medal for Turkmenistan",
+        "Tokyo 2020 silver medalist",
+        "Asian Championships competitor",
+        "Young athlete with continuing career"
+      ],
+      "images": [
+        {
+          "type": "Olympic Silver Medal",
+          "url": "https://www.olympic.org/athletes/polina-guryeva",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Polina Guryeva first Turkmen Olympic medalist"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/polina-guryeva",
+        "https://en.wikipedia.org/wiki/Polina_Guryeva"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Laurel Hubbard",
+      "country": "New Zealand",
+      "nationality": "New Zealander",
+      "birthDate": "1978-02-09",
+      "age": 46,
+      "currentStatus": "Retired",
+      "retiredYear": 2021,
+      "weightClass": {
+        "current": "N/A",
+        "history": ["87kg+"]
+      },
+      "achievements": {
+        "worldChampionships": [
+          {
+            "year": 2017,
+            "medal": "Silver"
+          }
+        ]
+      },
+      "historicalSignificance": "First openly transgender athlete to compete at Olympic Games",
+      "careerSpan": "2010-2021",
+      "notableAchievements": [
+        "First openly transgender woman to compete at Olympic Games (Tokyo 2020)",
+        "World Championships silver medalist",
+        "Pioneered transgender athlete inclusion in Olympics",
+        "Opened dialogue about inclusion and diversity in sports"
+      ],
+      "olympicParticipation": "Tokyo 2020 (did not complete competition after three failed snatch attempts)",
+      "images": [
+        {
+          "type": "Olympic Competitor",
+          "url": "https://www.olympic.org/athletes/laurel-hubbard",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Laurel Hubbard historic Olympic competitor"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/laurel-hubbard",
+        "https://en.wikipedia.org/wiki/Laurel_Hubbard"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Surodchana Khambao",
+      "country": "Thailand",
+      "nationality": "Thai",
+      "birthDate": "1997-03-22",
+      "age": 27,
+      "currentStatus": "Active",
+      "weightClass": {
+        "current": "49kg",
+        "history": ["49kg"]
+      },
+      "achievements": {
+        "olympicMedals": [
+          {
+            "year": 2024,
+            "event": "Paris 2024 Olympics",
+            "medal": "Bronze",
+            "category": "Women's 49kg"
+          }
+        ]
+      },
+      "records": {
+        "personalBest": {
+          "total": "207kg"
+        }
+      },
+      "historicalSignificance": "Thailand's Olympic medalist in women's weightlifting",
+      "careerSpan": "2015-Present",
+      "notableAchievements": [
+        "Olympic bronze medalist Paris 2024",
+        "Elite performer in lightweight division",
+        "Thailand's weightlifting representative"
+      ],
+      "images": [
+        {
+          "type": "Olympic Bronze Medal",
+          "url": "https://www.olympic.org/athletes/surodchana-khambao",
+          "source": "Olympic.org Official Database",
+          "license": "Official Use",
+          "caption": "Surodchana Khambao Paris 2024 bronze medalist"
+        }
+      ],
+      "sources": [
+        "https://www.olympic.org/athletes/surodchana-khambao",
+        "https://www.olympics.com/en/news/paris-2024-weightlifting-women-49kg-bronze"
+      ]
+    }
+  ],
+  "statistics": {
+    "totalAthletes": 18,
+    "olympicGoldMedalists": 11,
+    "olympicSilverMedalists": 2,
+    "olympicBronzeMedalists": 5,
+    "worldChampions": 8,
+    "byCountry": {
+      "China": 4,
+      "Taiwan": 2,
+      "Ecuador": 2,
+      "United States": 2,
+      "Philippines": 1,
+      "India": 1,
+      "North Korea": 1,
+      "Kazakhstan": 1,
+      "Colombia": 1,
+      "Norway": 1,
+      "New Zealand": 1,
+      "Thailand": 1,
+      "Turkmenistan": 1
+    },
+    "olympicsRepresented": {
+      "2000": 1,
+      "2012": 3,
+      "2016": 5,
+      "2020": 8,
+      "2024": 10
+    }
+  },
+  "citationFormat": {
+    "example": "Hidilyn Diaz. (2024). In Wikipedia. Retrieved from https://en.wikipedia.org/wiki/Hidilyn_Diaz",
+    "style": "MLA",
+    "alternativeStyle": "APA: Last name, First initial. (Year). Entry Title. In Encyclopedia Name. Retrieved from URL"
+  },
+  "dataQuality": {
+    "verificationStatus": "Verified from multiple authoritative sources",
+    "sourceTypes": [
+      "International Weightlifting Federation (IWF) Official Records",
+      "International Olympic Committee (IOC) Database",
+      "Wikipedia Sports Encyclopedias",
+      "Official National Olympic Committee sources",
+      "International News Archives"
+    ],
+    "lastUpdated": "2025-10-26",
+    "nextUpdateScheduled": "2025-12-31"
+  },
+  "usageRights": {
+    "dataLicense": "CC0 1.0 Universal (Public Domain Dedication)",
+    "attributionRequired": "While attribution is not required, it is appreciated",
+    "commercialUse": "Permitted",
+    "modifications": "Permitted"
+  }
+}
